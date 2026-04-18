@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PixelBoost Digital Marketing</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
+body{background:linear-gradient(135deg,#0f172a,#1e1b4b,#7c3aed);color:#fff;overflow-x:hidden;}
+
+header{
+  padding:20px;
+  text-align:center;
+  background:linear-gradient(90deg,#ec4899,#7c3aed);
+  animation:fadeDown 1s ease;
+}
+
+header h1{font-size:34px;font-weight:bold;}
+header p{opacity:0.9;}
+
+section{padding:60px 20px;text-align:center;}
+
+.poster{
+  width:100%;
+  max-height:450px;
+  object-fit:cover;
+  border-radius:20px;
+  margin-top:20px;
+  animation:zoomIn 1.5s ease;
+  box-shadow:0 10px 40px rgba(0,0,0,0.6);
+}
+
+.hero{
+  animation:fadeUp 1.2s ease;
+}
+
+.hero h2{font-size:40px;margin-bottom:15px;}
+.hero p{font-size:18px;margin-bottom:25px;}
+
+.btn{
+  background:#22c55e;
+  padding:14px 25px;
+  border:none;
+  border-radius:30px;
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+.btn:hover{background:#16a34a;transform:scale(1.05);}
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(10px);
+  padding:25px;
+  border-radius:20px;
+  transition:0.4s;
+}
+
+.card:hover{
+  transform:translateY(-10px) scale(1.03);
+  background:rgba(255,255,255,0.15);
+}
+
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  padding:12px;
+  margin:10px 0;
+  border:none;
+  border-radius:10px;
+}
+
+footer{
+  background:#020617;
+  padding:20px;
+  text-align:center;
+}
+
+.owner{
+  margin-top:10px;
+  font-size:16px;
+  color:#facc15;
+}
+
+/* Floating WhatsApp */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:#fff;
+  padding:15px;
+  border-radius:50%;
+  font-size:24px;
+  text-decoration:none;
+  box-shadow:0 0 10px rgba(0,0,0,0.4);
+  animation:float 2s infinite;
+}
+
+/* Animations */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(50px);} 
+  to{opacity:1;transform:translateY(0);} 
+}
+
+@keyframes fadeDown{
+  from{opacity:0;transform:translateY(-50px);} 
+  to{opacity:1;transform:translateY(0);} 
+}
+
+@keyframes float{
+  0%{transform:translateY(0);} 
+  50%{transform:translateY(-8px);} 
+  100%{transform:translateY(0);} 
+}
+
+@keyframes zoomIn{
+  from{transform:scale(0.8);opacity:0;} 
+  to{transform:scale(1);opacity:1;} 
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🚀 PixelBoost Digital Marketing</h1>
+  <p>Grow Your Business Fast</p>
+  <div class="owner">Owner: Suraj Kumar</div>
+</header>
+
+<!-- Poster Section -->
+<section>
+  <h2>🔥 Our Work</h2>
+  <img src="poster.jpg" alt="Poster" class="poster">
+</section>
+
+<section class="hero">
+  <h2>Get More Leads, Sales & Grow Fast</h2>
+  <p>Complete Digital Marketing Solutions for Your Business</p>
+  <a href="#contact" class="btn">Get FREE Consultation</a>
+</section>
+
+<section>
+  <h2>🔥 Our Services</h2>
+  <div class="services">
+    <div class="card">📢 Facebook & Instagram Ads</div>
+    <div class="card">🔍 Google Ads</div>
+    <div class="card">📈 SEO Optimization</div>
+    <div class="card">🎯 Lead Generation</div>
+    <div class="card">📱 Social Media Marketing</div>
+    <div class="card">🏆 Branding & Growth</div>
+  </div>
+</section>
+
+<section>
+  <h2>💡 Why Choose Us?</h2>
+  <p>✔ Daily Quality Leads</p>
+  <p>✔ High ROI Campaigns</p>
+  <p>✔ Targeted Audience Reach</p>
+  <p>✔ Business Growth Focus</p>
+</section>
+
+<section id="contact">
+  <h2>📞 Contact Us</h2>
+  <p>+91 7654468947</p>
+  <p>adsmanager8454@gmail.com</p>
+
+  <div class="contact-form">
+    <h3>Get Free Strategy Plan</h3>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <textarea rows="4" placeholder="Your Requirement"></textarea>
+      <button class="btn">Submit</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 PixelBoost | All Rights Reserved</p>
+</footer>
+
+<!-- WhatsApp Button -->
+<a href="https://wa.me/917654468947" class="whatsapp">💬</a>
+
+</body>
+</html>
